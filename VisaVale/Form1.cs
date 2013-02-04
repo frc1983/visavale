@@ -36,7 +36,7 @@ namespace VisaVale
 			List<String> sb;
 			string numCartao = numCartaoUsuario.Text;
 
-			gridLancamentos.Rows.Clear();
+			gridLancamentos.DataSource = null;
 
 			if (numCartao.Length < 16)
 			{
@@ -89,13 +89,16 @@ namespace VisaVale
 		private void createGrid(List<String> sb)
 		{
 			//11 é a linha seguinte depois da criacao dos Labels
-			gridLancamentos.AutoGenerateColumns = false;
-			gridLancamentos.Columns.Add("Data", sb[11].ToString());
-			gridLancamentos.Columns[0].DataPropertyName = "Data";
-			gridLancamentos.Columns.Add("Local", sb[12].ToString());
-			gridLancamentos.Columns[1].DataPropertyName = "Local";
-			gridLancamentos.Columns.Add("Valor", sb[13].ToString());
-			gridLancamentos.Columns[2].DataPropertyName = "Valor";			
+			if (gridLancamentos.Columns.Count < 3)
+			{
+				gridLancamentos.AutoGenerateColumns = false;
+				gridLancamentos.Columns.Add("Data", sb[11].ToString());
+				gridLancamentos.Columns[0].DataPropertyName = "Data";
+				gridLancamentos.Columns.Add("Local", sb[12].ToString());
+				gridLancamentos.Columns[1].DataPropertyName = "Local";
+				gridLancamentos.Columns.Add("Valor", sb[13].ToString());
+				gridLancamentos.Columns[2].DataPropertyName = "Valor";
+			}
 
 			List<Lancamentos> lancamentos = new List<Lancamentos>();
 			for (int i = 14; i < sb.Count - 2; i = i+3)
