@@ -1,0 +1,16 @@
+C:\Users\fabiocosta\Desktop\VisaVale\VisaVale\bin\Release\VisaVale.exe.manifest
+C:\Users\fabiocosta\Desktop\VisaVale\VisaVale\bin\Release\VisaVale.application
+C:\Users\fabiocosta\Desktop\VisaVale\VisaVale\bin\Release\VisaVale.exe
+C:\Users\fabiocosta\Desktop\VisaVale\VisaVale\bin\Release\VisaVale.pdb
+C:\Users\fabiocosta\Desktop\VisaVale\VisaVale\bin\Release\HtmlAgilityPack.dll
+C:\Users\fabiocosta\Desktop\VisaVale\VisaVale\bin\Release\HtmlAgilityPack.pdb
+C:\Users\fabiocosta\Desktop\VisaVale\VisaVale\bin\Release\HtmlAgilityPack.xml
+C:\Users\fabiocosta\Desktop\VisaVale\VisaVale\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Users\fabiocosta\Desktop\VisaVale\VisaVale\obj\x86\Release\VisaVale.Properties.Resources.resources
+C:\Users\fabiocosta\Desktop\VisaVale\VisaVale\obj\x86\Release\GenerateResource.read.1.tlog
+C:\Users\fabiocosta\Desktop\VisaVale\VisaVale\obj\x86\Release\GenerateResource.write.1.tlog
+C:\Users\fabiocosta\Desktop\VisaVale\VisaVale\obj\x86\Release\VisaVale.exe.manifest
+C:\Users\fabiocosta\Desktop\VisaVale\VisaVale\obj\x86\Release\VisaVale.application
+C:\Users\fabiocosta\Desktop\VisaVale\VisaVale\obj\x86\Release\VisaVale.exe
+C:\Users\fabiocosta\Desktop\VisaVale\VisaVale\obj\x86\Release\VisaVale.pdb
+C:\Users\fabiocosta\Desktop\VisaVale\VisaVale\obj\x86\Release\VisaVale.Form1.resources
