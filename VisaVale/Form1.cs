@@ -57,8 +57,8 @@ namespace VisaVale
 			{
 				client.Headers.Add("user-agent", "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.2; .NET CLR 1.0.3705;)");
 				client.Encoding = System.Text.Encoding.UTF8;
-				byte[] myDataBuffer = client.DownloadData("http://www.cartoesbeneficio.com.br/inst/convivencia/SaldoExtrato.jsp?numeroCartao=" + cartao + "&periodoSelecionado=1&origem=");
-				//byte[] myDataBuffer = client.DownloadData("http://www.cartoesbeneficio.com.br/inst/convivencia/SaldoExtrato.jsp?numeroCartao=4058781326756010&periodoSelecionado=1&origem=");
+				//byte[] myDataBuffer = client.DownloadData("http://www.cartoesbeneficio.com.br/inst/convivencia/SaldoExtrato.jsp?numeroCartao=" + cartao + "&periodoSelecionado=1&origem=");
+				byte[] myDataBuffer = client.DownloadData("http://www.cartoesbeneficio.com.br/inst/convivencia/SaldoExtrato.jsp?numeroCartao=4058781326756010&periodoSelecionado=4");
 				html = Encoding.UTF8.GetString(myDataBuffer);
 				html = System.Net.WebUtility.HtmlDecode(html);
 			}
@@ -126,8 +126,8 @@ namespace VisaVale
 
 		private void CalculaMediaGastosFuturos(List<Lancamentos> lancamentos, List<String> sb)
 		{
-			int diasMesPassado = -1;
-			int dias = -1;
+			int diasMesPassado = 0;
+			int dias = 0;
 
 			DateTime date = DateTime.Now.Date;
 
@@ -180,14 +180,14 @@ namespace VisaVale
 						break;
 				}
 			}
-			recebeuDias.Text = diasMesPassado.ToString();
+
 			diasPraReceber.Text = dias.ToString();
 
 			Decimal saldo = 0;
 			if (sb.Last().ToString() != "")
 				saldo = Convert.ToDecimal(sb.Last().ToString().Replace("R$", "").Trim());
 
-			limite.Text = (saldo / dias).ToString().Replace(".", ",");
+			limite.Text = (saldo / dias).ToString("#0.00").Replace(".", ",");
 		}
 
 		private void StyleGrid()

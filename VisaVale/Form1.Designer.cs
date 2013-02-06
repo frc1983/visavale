@@ -47,21 +47,18 @@
 			this.labelSaldo = new System.Windows.Forms.Label();
 			this.saldoDisponivel = new System.Windows.Forms.Label();
 			this.panel1 = new System.Windows.Forms.Panel();
+			this.gridLancamentos = new System.Windows.Forms.DataGridView();
+			this.label8 = new System.Windows.Forms.Label();
 			this.panel2 = new System.Windows.Forms.Panel();
 			this.label14 = new System.Windows.Forms.Label();
 			this.limite = new System.Windows.Forms.Label();
 			this.label13 = new System.Windows.Forms.Label();
-			this.label12 = new System.Windows.Forms.Label();
-			this.recebeuDias = new System.Windows.Forms.Label();
 			this.label11 = new System.Windows.Forms.Label();
 			this.diasPraReceber = new System.Windows.Forms.Label();
 			this.label10 = new System.Windows.Forms.Label();
-			this.label9 = new System.Windows.Forms.Label();
-			this.gridLancamentos = new System.Windows.Forms.DataGridView();
-			this.label8 = new System.Windows.Forms.Label();
 			this.panel1.SuspendLayout();
-			this.panel2.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.gridLancamentos)).BeginInit();
+			this.panel2.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// saldo
@@ -226,105 +223,10 @@
 			this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 			this.panel1.Controls.Add(this.gridLancamentos);
 			this.panel1.Controls.Add(this.label8);
-			this.panel1.Location = new System.Drawing.Point(18, 354);
+			this.panel1.Location = new System.Drawing.Point(18, 309);
 			this.panel1.Name = "panel1";
-			this.panel1.Size = new System.Drawing.Size(530, 308);
+			this.panel1.Size = new System.Drawing.Size(530, 353);
 			this.panel1.TabIndex = 17;
-			// 
-			// panel2
-			// 
-			this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-			this.panel2.Controls.Add(this.label14);
-			this.panel2.Controls.Add(this.limite);
-			this.panel2.Controls.Add(this.label13);
-			this.panel2.Controls.Add(this.label12);
-			this.panel2.Controls.Add(this.recebeuDias);
-			this.panel2.Controls.Add(this.label11);
-			this.panel2.Controls.Add(this.diasPraReceber);
-			this.panel2.Controls.Add(this.label10);
-			this.panel2.Controls.Add(this.label9);
-			this.panel2.Location = new System.Drawing.Point(18, 248);
-			this.panel2.Name = "panel2";
-			this.panel2.Size = new System.Drawing.Size(200, 100);
-			this.panel2.TabIndex = 27;
-			// 
-			// label14
-			// 
-			this.label14.AutoSize = true;
-			this.label14.Location = new System.Drawing.Point(132, 68);
-			this.label14.Name = "label14";
-			this.label14.Size = new System.Drawing.Size(42, 13);
-			this.label14.TabIndex = 35;
-			this.label14.Text = "por dia.";
-			// 
-			// limite
-			// 
-			this.limite.AutoSize = true;
-			this.limite.Location = new System.Drawing.Point(100, 68);
-			this.limite.Name = "limite";
-			this.limite.Size = new System.Drawing.Size(0, 13);
-			this.limite.TabIndex = 34;
-			// 
-			// label13
-			// 
-			this.label13.AutoSize = true;
-			this.label13.Location = new System.Drawing.Point(19, 68);
-			this.label13.Name = "label13";
-			this.label13.Size = new System.Drawing.Size(81, 13);
-			this.label13.TabIndex = 33;
-			this.label13.Text = "Pode gastar R$";
-			// 
-			// label12
-			// 
-			this.label12.AutoSize = true;
-			this.label12.Location = new System.Drawing.Point(103, 17);
-			this.label12.Name = "label12";
-			this.label12.Size = new System.Drawing.Size(29, 13);
-			this.label12.TabIndex = 32;
-			this.label12.Text = "dias.";
-			// 
-			// recebeuDias
-			// 
-			this.recebeuDias.AutoSize = true;
-			this.recebeuDias.Location = new System.Drawing.Point(80, 17);
-			this.recebeuDias.Name = "recebeuDias";
-			this.recebeuDias.Size = new System.Drawing.Size(0, 13);
-			this.recebeuDias.TabIndex = 31;
-			// 
-			// label11
-			// 
-			this.label11.AutoSize = true;
-			this.label11.Location = new System.Drawing.Point(88, 41);
-			this.label11.Name = "label11";
-			this.label11.Size = new System.Drawing.Size(92, 13);
-			this.label11.TabIndex = 30;
-			this.label11.Text = "dias para receber.";
-			// 
-			// diasPraReceber
-			// 
-			this.diasPraReceber.AutoSize = true;
-			this.diasPraReceber.Location = new System.Drawing.Point(61, 41);
-			this.diasPraReceber.Name = "diasPraReceber";
-			this.diasPraReceber.Size = new System.Drawing.Size(0, 13);
-			this.diasPraReceber.TabIndex = 29;
-			// 
-			// label10
-			// 
-			this.label10.AutoSize = true;
-			this.label10.Location = new System.Drawing.Point(19, 42);
-			this.label10.Name = "label10";
-			this.label10.Size = new System.Drawing.Size(38, 13);
-			this.label10.TabIndex = 28;
-			this.label10.Text = "Faltam";
-			// 
-			// label9
-			// 
-			this.label9.AutoSize = true;
-			this.label9.Location = new System.Drawing.Point(19, 17);
-			this.label9.Name = "label9";
-			this.label9.Size = new System.Drawing.Size(60, 13);
-			this.label9.TabIndex = 27;
-			this.label9.Text = "Recebeu a";
 			// 
 			// gridLancamentos
 			// 
@@ -335,7 +237,7 @@
 			this.gridLancamentos.ReadOnly = true;
 			this.gridLancamentos.RowHeadersVisible = false;
 			this.gridLancamentos.RowTemplate.ReadOnly = true;
-			this.gridLancamentos.Size = new System.Drawing.Size(505, 264);
+			this.gridLancamentos.Size = new System.Drawing.Size(505, 305);
 			this.gridLancamentos.TabIndex = 3;
 			// 
 			// label8
@@ -347,6 +249,72 @@
 			this.label8.Size = new System.Drawing.Size(161, 20);
 			this.label8.TabIndex = 2;
 			this.label8.Text = "Últimos lançamentos:";
+			// 
+			// panel2
+			// 
+			this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+			this.panel2.Controls.Add(this.label14);
+			this.panel2.Controls.Add(this.label10);
+			this.panel2.Controls.Add(this.diasPraReceber);
+			this.panel2.Controls.Add(this.limite);
+			this.panel2.Controls.Add(this.label11);
+			this.panel2.Controls.Add(this.label13);
+			this.panel2.Location = new System.Drawing.Point(18, 237);
+			this.panel2.Name = "panel2";
+			this.panel2.Size = new System.Drawing.Size(307, 66);
+			this.panel2.TabIndex = 27;
+			// 
+			// label14
+			// 
+			this.label14.AutoSize = true;
+			this.label14.Location = new System.Drawing.Point(129, 36);
+			this.label14.Name = "label14";
+			this.label14.Size = new System.Drawing.Size(42, 13);
+			this.label14.TabIndex = 35;
+			this.label14.Text = "por dia.";
+			// 
+			// limite
+			// 
+			this.limite.AutoSize = true;
+			this.limite.Location = new System.Drawing.Point(97, 36);
+			this.limite.Name = "limite";
+			this.limite.Size = new System.Drawing.Size(0, 13);
+			this.limite.TabIndex = 34;
+			// 
+			// label13
+			// 
+			this.label13.AutoSize = true;
+			this.label13.Location = new System.Drawing.Point(10, 36);
+			this.label13.Name = "label13";
+			this.label13.Size = new System.Drawing.Size(81, 13);
+			this.label13.TabIndex = 33;
+			this.label13.Text = "Pode gastar R$";
+			// 
+			// label11
+			// 
+			this.label11.AutoSize = true;
+			this.label11.Location = new System.Drawing.Point(74, 10);
+			this.label11.Name = "label11";
+			this.label11.Size = new System.Drawing.Size(92, 13);
+			this.label11.TabIndex = 30;
+			this.label11.Text = "dias para receber.";
+			// 
+			// diasPraReceber
+			// 
+			this.diasPraReceber.AutoSize = true;
+			this.diasPraReceber.Location = new System.Drawing.Point(52, 10);
+			this.diasPraReceber.Name = "diasPraReceber";
+			this.diasPraReceber.Size = new System.Drawing.Size(0, 13);
+			this.diasPraReceber.TabIndex = 29;
+			// 
+			// label10
+			// 
+			this.label10.AutoSize = true;
+			this.label10.Location = new System.Drawing.Point(8, 10);
+			this.label10.Name = "label10";
+			this.label10.Size = new System.Drawing.Size(38, 13);
+			this.label10.TabIndex = 28;
+			this.label10.Text = "Faltam";
 			// 
 			// Form1
 			// 
@@ -377,9 +345,9 @@
 			this.Text = "Consulta Visa Vale";
 			this.panel1.ResumeLayout(false);
 			this.panel1.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.gridLancamentos)).EndInit();
 			this.panel2.ResumeLayout(false);
 			this.panel2.PerformLayout();
-			((System.ComponentModel.ISupportInitialize)(this.gridLancamentos)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -410,12 +378,9 @@
 		private System.Windows.Forms.Label label14;
 		private System.Windows.Forms.Label limite;
 		private System.Windows.Forms.Label label13;
-		private System.Windows.Forms.Label label12;
-		private System.Windows.Forms.Label recebeuDias;
 		private System.Windows.Forms.Label label11;
 		private System.Windows.Forms.Label diasPraReceber;
 		private System.Windows.Forms.Label label10;
-		private System.Windows.Forms.Label label9;
 		private System.Windows.Forms.DataGridView gridLancamentos;
 		private System.Windows.Forms.Label label8;
 	}

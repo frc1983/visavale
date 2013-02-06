@@ -54,14 +54,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="VisaVale.exe" size="19968">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="VisaVale.exe" size="19456">
       <assemblyIdentity name="VisaVale" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>Xk2FtOfXO2bMy51QcGt8DG66AH8=</dsig:DigestValue>
+        <dsig:DigestValue>pAGGmWi0RwJM9r3Z/1uRJjRl/bU=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
